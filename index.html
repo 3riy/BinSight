@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>BinSight</title>
+    <meta name="description" content="I explore how software and hardware blend to create meaningful systems.">
+    <meta name="google-site-verification" content="j-JDQ1V-xYaWhueZ4_6TTiJwYQkZ6MHaQRtOAptjJJo" />
+    <meta name="msvalidate.01" content="3E5A7800F766EAC5F9D06BF8523C2061" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Candal&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div id="static-cursor"></div>
+    <div id="cursor-trail-container2"></div>
+
+<div class="topbar">
+    <div class="header" style="display: flex; align-items: center;">
+        <a href="index.html">
+            <img src="styles/logo.png" alt="Logo" style="height: 80px; display: block;" />
+        </a>
+    </div>
+      
+    <div class="menu">
+        <a href="#about" class="menu-link active">About</a><span style="color: red">|</span>
+        <a href="#projects" class="menu-link">Projects</a><span style="color: red">|</span>
+        <a href="#learn" class="menu-link">Learn</a>
+    </div>
+      
+    <div class="social-icons">
+        <a href="https://github.com/3riy" target="_blank" class="fab fa-github"></a>
+        <a href="https://medium.com/@3riy" target="_blank" class="fab fa-medium"></a>
+    </div>
+</div>
+    <br>
+
+    <div class="hero-flex-container" id="home">
+
+        <div class="center-box">
+            <div class="text-content">
+                <h1>Smart Bins. Clean Communities.</h1>
+                <p><span style="color: #fc7c7c;">Real-time IoT-powered monitoring for smarter waste management.</span></p><br>
+                <p>Waste fill level and air quality insights for assessing bin health and enabling timely servicing.</p><br>
+                <p>A member of <a href="https://www.vre.pes.edu/" target="_blank" class="work-link">Vega Racing Electric</a> club</p><br>
+                <p>📍Somewhere between <span style="color: #fc7c7c;">reality</span> and a <span style="color: #fc7c7c;">phantasm</span></p>
+            </div>
+
+            <div class="right-section">
+                <video src="styles/bin.png" alt="abt" />
+            </div>
+        </div>
+
+    </div>
+    <br><br>
+    
+    <div id="projects">
+        <h1 id="typewriter"></h1>
+
+        <div class="project-grid">
+
+            <div class="project-card">
+                <img src="img/cc.png" alt="Road Incident Detection System">
+                <h3>Road Incident/Fire Detection and SMS Alert System</h3>
+
+                <div class="project-links">
+                    <a href="https://github.com/rh3nium/Road-Incident-Hazard-Detection-and-SMS-Alert-Notification-System" class="icon-btn" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://github.com/rh3nium/Road-Incident-Hazard-Detection-and-SMS-Alert-Notification-System/blob/main/README.md" class="project-btn" target="_blank">
+                        📘 Docs
+                    </a>
+                </div>
+
+                <p>Real-time road incident and fire detection + SMS alert notification system developed using computer vision models, T5 string generation, and Twilio SMS API. Made in a team of 3 during a 24-hr hackathon at college.</p>
+                <p><b>Tools used:</b><br>
+                    <b>- Python (Language)</b><br>
+                    <b>- YOLO (ultralytics), numpy, matplotlib</b>: For object detection, numerical operations, and visual debugging.<br>
+                    <b>- T5 Transformer Model</b>: For incident classification and output report generation.<br>
+                    <b>- MongoDB</b>: For storing incident data.<br>
+                    <b>- Twilio SMS API</b>: For automatically sending SMS notifications to hard-coded emergency phone numbers.<br>
+                    <b>- Flask, gunicorn</b>: Web server for live output dashboard.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <img src="img/rrrrr.png" alt="Crowd and Cluster Detection/Heatmap System">
+                <h3>Crowd and Cluster Detection + Heatmap System</h3>
+
+                <div class="project-links">
+                    <a href="https://github.com/rh3nium/Crowd-Monitoring-system-Heatmap" class="icon-btn" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://github.com/rh3nium/Crowd-Monitoring-system-Heatmap/blob/main/README.md" class="project-btn" target="_blank">
+                        📘 Docs
+                    </a>
+                </div>
+
+                <p>Crowd monitoring and cluster detection system developed using Python & OpenCV.</p>
+                <p><b>Tools used:</b><br>
+                    <b>- Python (Language)</b><br>
+                    <b>- numpy</b>: For creating N-dimensional arrays of images and performing array and matrix operations.<br>
+                    <b>- DBSCAN</b>: For density-based clustering and identifying points in low-density areas as noise or outliers.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="project-grid">
+
+            <div class="project-card">
+                <img src="img/emeraldbeach_night.png" alt="sots">
+                <h3>Shadows On The Sands</h3>
+
+                <div class="project-links">
+                    <a href="https://3riy.itch.io/shadows-on-the-sands" target="_blank" class="project-btn">View on itch.io</a>
+                </div>
+
+                <p>Lore-based mystery narrative game set in a beachside restaurant.</p>
+                <p><b>Tools used:</b><br>
+                    <b>- Ren'Py (Engine)</b><br>
+                    <b>- Python</b>: For variable state flags.<br>
+                    <b>- Autodesk Sketchbook, GIMP, Canva</b>: For art and GUI assets.
+                </p>
+            </div>
+        </div>
+        
+    </div>
+
+<!-- LEARN SECTION -->
+<div id="learn">
+    <h1>Learn</h1>
+
+    <div class="repo-grid">
+        <div class="repo-card">
+            <a href="https://medium.com/@3riy/list/motorcycle-tech-0dc11d11037f" target="_blank">
+                <h3>Tech Blog</h3></h3>
+                <img src="img/moto.png" class="repo-preview-img" alt="Motorcycle Tech Blog">
+                <p>Beginner-friendly articles on UGV, UAV, and motorcycle technology.<br>
+                Topics include essential terminologies, navigation and path planning, ECUs, sensors and actuators, control systems, computer vision, IoT applications, communication, and autonomous features.</p>
+            </a>
+        </div>
+    </div>
+
+    <h1>Languages</h1>
+
+    <div class="repo-grid">
+
+        <div class="repo-card">
+            <a href="https://github.com/rh3nium/Python" target="_blank">
+                <h3>🐍 Python</h3>
+                <p>Python is a powerful, versatile, high-level, interpreted, object-oriented programming language, driving innovation across data science, machine learning/deep learning, web development, and automation.</p>
+            </a>
+            <div class="folder-list">
+                <ul>
+                    <li><a href="https://github.com/rh3nium/Python/tree/main/Dictionaries"><i class="fas fa-folder"></i>Dictionaries</a></li>
+                    <li><a href="https://github.com/rh3nium/Python/tree/main/For%20Loop"><i class="fas fa-folder"></i>For Loop</a></li>
+                    <li><a href="https://github.com/rh3nium/Python/tree/main/Functions"><i class="fas fa-folder"></i>Functions</a></li>
+                    <li><a href="https://github.com/rh3nium/Python/tree/main/If-Else-Elif%20Statements"><i class="fas fa-folder"></i>If-Else-Elif Statements</a></li>
+                    <li><a href="https://github.com/rh3nium/Python/tree/main/Keywords%20and%20Identifiers"><i class="fas fa-folder"></i>Keywords and Identifiers</a></li>
+                    <li><a href="https://github.com/rh3nium/Python/tree/main/Lists"><i class="fas fa-folder"></i>Lists</a></li>
+                    <li><a href="https://github.com/rh3nium/Python/tree/main/Sets"><i class="fas fa-folder"></i>Sets</a></li>
+                    <li><a href="https://github.com/rh3nium/Python/tree/main/Strings"><i class="fas fa-folder"></i>Strings</a></li>
+                    <li><a href="https://github.com/rh3nium/Python/tree/main/Tkinter"><i class="fas fa-folder"></i>Tkinter</a></li>
+                    <li><a href="https://github.com/rh3nium/Python/tree/main/Try-Except-Finally%20Statements"><i class="fas fa-folder"></i>Try-Except-Finally Statements</a></li>
+                    <li><a href="https://github.com/rh3nium/Python/tree/main/Tuples"><i class="fas fa-folder"></i>Tuples</a></li>
+                    <li><a href="https://github.com/rh3nium/Python/tree/main/While%20Loop"><i class="fas fa-folder"></i>While Loop</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="repo-card">
+            <a href="https://github.com/rh3nium/Bash" target="_blank">
+            <h3>＄ Bash</h3>
+            <p>Bash (short for Bourne Again Shell) is a command-line language and scripting shell used primarily on Unix and Linux systems to interact with the automate tasks. It serves both as an interactive shell—where users can execute commands, manage files, and control processes—and as a scripting language that allows writing programs to perform repetitive or complex operations efficiently.</p>
+            </a>
+            <div class="folder-list">
+                <ul>
+                    <li><a href="https://github.com/rh3nium/Bash/tree/main/Conditional%20Statements"><i class="fas fa-folder"></i>Conditional Statements</a></li>
+                    <li><a href="https://github.com/rh3nium/Bash/tree/main/Task%20Automation"><i class="fas fa-folder"></i>Task Automation</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+    <br><br>         
+
+<script>
+        // --- SCROLL SPY & MENU LOGIC ---
+        document.addEventListener("DOMContentLoaded", () => {
+            const menuLinks = document.querySelectorAll('.menu-link');
+            // Ensure these IDs match your HTML exactly
+            const sections = document.querySelectorAll('#home, #about, #demo');
+
+            function changeLinkState() {
+                let current = "";
+                
+                // Iterate through all sections to find which one is currently in view
+                sections.forEach((section) => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+
+                    // If we have scrolled past the top of this section (minus a buffer of 250px)
+                    if (window.scrollY >= (sectionTop - 250)) {
+                        current = section.getAttribute("id");
+                    }
+                });
+
+                // Fallback: If we are at the very top of the page, force "about"
+                // This covers page refresh or the "center box" area
+                if (window.scrollY < 100) {
+                    current = "about";
+                }
+
+                // Remove active class from all, add to the current one
+                menuLinks.forEach((link) => {
+                    link.classList.remove('active');
+                    // Check if the link's href includes the current section ID
+                    if (current && link.getAttribute('href').includes(current)) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+
+            window.addEventListener('scroll', changeLinkState);
+            // Run once on load to highlight the correct link immediately
+            changeLinkState();
+        });
+</script>
+
+
+    <script>
+        // --- TYPEWRITERS & EFFECTS ---
+        const textLang = "Blog";
+        const speedLang = 55;
+        let indexLang = 0;
+
+        function typeEffectLang() {
+            const heading = document.getElementById("typewriter-blog");
+            if(heading) {
+                heading.innerHTML = textLang.substring(0, indexLang) + '<span class="red-cursor"></span>';
+                if (indexLang < textLang.length) {
+                    indexLang++;
+                    setTimeout(typeEffectLang, speedLang);
+                }
+            }
+        }
+
+        const textProj = "About";
+        const speedProj = 55;
+        let indexProj = 0;
+
+        function typeEffectProj() {
+            const heading = document.getElementById("typewriter");
+            if(heading) {
+                heading.innerHTML = textProj.substring(0, indexProj) + '<span class="red-cursor"></span>';
+                if (indexProj < textProj.length) {
+                    indexProj++;
+                    setTimeout(typeEffectProj, speedProj);
+                }
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            typeEffectLang();
+            typeEffectProj();
+        });
+
+        // Static cursor follow
+        const staticCursor = document.getElementById('static-cursor');
+        document.addEventListener('mousemove', (e) => {
+            staticCursor.style.left = `${e.clientX}px`;
+            staticCursor.style.top = `${e.clientY}px`;
+        });
+        
+        // Trail logic
+        const trailContainer2 = document.getElementById('cursor-trail-container2');
+        if (trailContainer2) {
+            document.addEventListener('mousemove', (e) => {
+                const triangle = document.createElement('div');
+                triangle.className = 'trianglewhite5'; 
+                
+                triangle.style.left = `${e.clientX}px`;
+                triangle.style.top = `${e.clientY}px`;
+                
+                trailContainer2.appendChild(triangle);
+
+                setTimeout(() => { triangle.style.opacity = '0'; }, 100);
+                setTimeout(() => { triangle.remove(); }, 1000);
+            });
+        }
+        
+        function protectImages() {
+            document.addEventListener("contextmenu", function (e) {
+                if (e.target.tagName === "IMG") e.preventDefault();
+            });
+            document.addEventListener("dragstart", function (e) {
+                if (e.target.tagName === "IMG") e.preventDefault();
+            });
+            document.querySelectorAll("img").forEach(img => {
+                img.setAttribute("oncontextmenu", "return false;");
+            });
+        }
+        protectImages();
+
+    </script>
+
+</body>
+</html>
